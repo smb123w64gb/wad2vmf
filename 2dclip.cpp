@@ -337,7 +337,7 @@ void RemovePoint(poly_t *p, int n)
 */
 void printpoint(char *s, point_t *p)
 {
-	sprintf(s,"("CSPEC", "CSPEC")",p->x,p->y);
+	sprintf(s,"(%lf, %lf)",p->x,p->y);
 }
 
 /*

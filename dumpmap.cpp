@@ -435,7 +435,7 @@ void WriteYPlane(FILE *f, int y, bool dir)
 void OutputPlane(FILE *f,point3d_t p[], const char *tex)
 {
 	// output points
-	fprintf(f,"( "CSPEC" "CSPEC" "CSPEC" ) ( "CSPEC" "CSPEC" "CSPEC" ) ( "CSPEC" "CSPEC" "CSPEC" ) ",
+	fprintf(f,"( %lf %lf %lf ) ( %lf %lf %lf ) ( %lf %lf %lf ) ",
 		p[0].x,p[0].y,p[0].z,p[1].x,p[1].y,p[1].z,p[2].x,p[2].y,p[2].z);
 	// output texture
 	fprintf(f,"%s ",tex);
